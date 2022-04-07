@@ -5,7 +5,7 @@
 }
 
 #message-container{
-    width: 60vw;
+    width: 600px;
     height: 60vh;
     background-color: rgb(110, 110, 99);
     border: 1px solid black;
@@ -14,17 +14,42 @@
     top: 50%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%) }
-
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
+ li{
+    list-style: none;
+    background-color: #cfcece;
+    margin: 0.8rem;
+    padding: 0.5rem 0.8rem;
+}
 
-#send-container{
+.send-container{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+#message-input{
+        padding: 0.8rem;
+        width: 400px;
+
 }
 
 #send-button{
     border: none;
-    padding: 1.5rem;
+    padding: 0.8rem;
     background-color: aqua;
+    width: 190px;
+    flex-basis: auto;
+      border-radius: 10px;
+  border: 2px solid #797d74;
+}
+
+#send-button:hover{
+    cursor: pointer;
 }

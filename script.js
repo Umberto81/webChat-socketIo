@@ -1,7 +1,7 @@
 const formElement = document.getElementById("send-container");
 const messageInput = document.getElementById("message-input");
 const messagesList = document.querySelector(".messages");
-//const newUser = prompt("What is your name?");
+const newUser = prompt("What is your name?");
 
 appendMessage("you joined");
 
@@ -20,11 +20,11 @@ socket.on("chat-message", ({ message, userName }) => {
 });
 
 socket.on("user-connected", (user) => {
-  appendMessage(`${user} connected`);
+  appendMessage(`${user}: connected`);
 });
 
 socket.on("user-disconnected", (user) => {
-  appendMessage(`${user} disconnected`);
+  appendMessage(`${user}: disconnected`);
 });
 
 function appendMessage(message) {
