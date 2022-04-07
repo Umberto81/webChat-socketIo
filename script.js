@@ -1,7 +1,7 @@
 const formElement = document.getElementById("send-container");
 const messageInput = document.getElementById("message-input");
 const messagesList = document.querySelector(".messages");
-const newUser = prompt("What is your name?");
+//const newUser = prompt("What is your name?");
 
 appendMessage("you joined");
 
