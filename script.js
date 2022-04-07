@@ -4,15 +4,16 @@ const messagesList = document.querySelector(".messages");
 const newUser = prompt("What is your name?");
 
 appendMessage("you joined");
-
 socket.emit("new-user", newUser);
 
 formElement.addEventListener("submit", (e) => {
   e.preventDefault();
   const message = messageInput.value;
-  socket.emit("send-chat-message", message);
-  appendMessage(`You: ${message}`);
-  message.value = "";
+  if (message) {
+    socket.emit("send-chat-message", message);
+    appendMessage(`You: ${message}`);
+    messageInput.value = "";
+  }
 });
 
 socket.on("chat-message", ({ message, userName }) => {

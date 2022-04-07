@@ -37,6 +37,7 @@
 #message-input{
         padding: 0.8rem;
         width: 400px;
+        margin: 0.5rem;
 
 }
 
@@ -44,7 +45,7 @@
     border: none;
     padding: 0.8rem;
     background-color: aqua;
-    width: 190px;
+    width: 160px;
     flex-basis: auto;
       border-radius: 10px;
   border: 2px solid #797d74;
