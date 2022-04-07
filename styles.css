@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#message-container{
+    width: 80vw;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: rgb(110, 110, 99);
+    border: 1px solid black;
+
+}
+
+
+#send-container{
+    width: 100%;
+}
+
+#send-button{
+    border: none;
+    padding: 1.5rem;
+    background-color: aqua;
+}
